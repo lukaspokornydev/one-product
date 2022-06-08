@@ -1,0 +1,11 @@
+<div class="beans">
+    {% for bean in (1..5) %}
+
+     {% if bean <= level %}
+{% comment %} defaultne jsou prazdne {% endcomment %}
+      {% render 'icon-bean-filled' %}
+     {% else %}
+      {% render 'icon-bean-empty' %}
+     {% endif %}
+    {% endfor %}
+</div>  
